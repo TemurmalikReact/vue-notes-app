@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="navbar">
-      <div class="logo">Notes App</div>
+      <div class="logo">Note App</div>
       <div class="links">
         <router-link to="/" class="links_item">Home</router-link>
         <router-link to="/notes" class="links_item">Notes</router-link>

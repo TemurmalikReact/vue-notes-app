@@ -131,8 +131,11 @@ export default {
     },
   },
   mounted() {
-    const notes = JSON.parse(localStorage.getItem("notes"));
-    this.notes = notes;
+    const localNotes = localStorage.getItem("notes");
+    if (localNotes) {
+      const notes = JSON.parse(localNotes);
+      this.notes = notes;
+    }
   },
   data() {
     return {
